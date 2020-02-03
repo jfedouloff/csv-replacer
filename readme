@@ -1,0 +1,13 @@
+Thanks for actually opening the readme!
+
+This is a very straightforward script written to the spec I was sent, with minimal interpretation. I wrote it in Python 2.7.9.
+
+The script can be run from the command line with arguments (use --help for details), or you can import it into a Python session and invoke its methods directly (after you create __init__.py, as Git won't let me upload it).
+
+You can specify a string to find and a string to replace with. You can also specify a column, or multiple columns, to operate on. If you do not specify a column, the script will operate on all columns.
+
+You can specify the name of your output file. If you do not, the script will use <name_of_input_file>_replaced.csv.
+
+All paths are relative to your working directory.
+
+The script includes a test method containing some unit tests, which you can invoke using the --test option. Each will run a given find/replace on a given dataset and check against a given expected output. The test cases are intended to reflect meaningfully different use cases, namely 1) replacing a value in one column and not others, 2) replacing a value in multiple columns, and 3) replacing a value in all columns.
